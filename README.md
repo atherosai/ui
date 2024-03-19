@@ -11,18 +11,22 @@ git clone git@github.com:atherosai/ui.git
 
 Just navigate to the folder with your chosen example and open html file in the browser.
 
-# For React Examples
+# For Running the application
 
-* Install npm packages
+* Navigate to react-examples folder
 ```
 npm i 
 ```
-* Run development mode
+* Build the next JS code and install live server from vs code 
+```
+npm run build
+```
+* Run the command from react-examples folder Open index.html in a browser.
+
 ```
 npm run dev
 ```
-
-Now the app is accessible at ```localhost:3000```
+Now the app is accessible at ```http://localhost:3000,```
 
 # My Social Media
 The examples are posted here:
