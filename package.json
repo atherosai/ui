@@ -1,5 +1,6 @@
+```json
 {
-  "name": "ui",
+  "name": "projeto-ui",
   "private": true,
   "scripts": {
     "deploy": "npm run compress:imgs && npm run build && rm -rf node_modules react-examples/node_modules",
