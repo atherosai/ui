@@ -1,6 +1,3 @@
-
-
-
 :root {
     --primary: #6B43FF;
     --primary-light: #6667B0;
@@ -86,7 +83,6 @@ body {
 }
 
 .info-side {
-    height: 100vh;
     padding: 15.5rem 0.75rem 0.5rem 0.75rem;
     color: #401B3D;
     display: flex;

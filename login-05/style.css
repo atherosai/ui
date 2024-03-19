@@ -245,7 +245,7 @@ body {
     padding: 2rem;
     border-radius: 2rem;
     background: url('assets/background.jpg') repeat center center;
-    background-position: cover;
+    background-size: cover;
     max-height: 90rem;
 }
 
