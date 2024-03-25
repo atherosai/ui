@@ -75,6 +75,10 @@ body {
     background-color: var(--background);
 }
 
+.navigation li a.active {
+    color: var(--primary);
+}
+
 .navigation>li {
     display: flex;
     position: relative;
