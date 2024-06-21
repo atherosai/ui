@@ -3,12 +3,14 @@
   "private": true,
   "scripts": {
     "deploy": "npm run compress:imgs && npm run build && rm -rf node_modules react-examples/node_modules",
-    "build": "npm run build:react-examples && node index.mjs",
+    "build": "rm -rf ./screenshot && npm run build:react-examples && node index.mjs",
     "build:react-examples": "cd react-examples && npm i && npm run build",
-    "compress:imgs": "npx compress-images-with-sharp 80 ./ original"
+    "compress:imgs": "compress-images-with-sharp 80 ./ original"
   },
   "devDependencies": {
-    "fast-glob": "^3.3.2"
+    "compress-images-with-sharp": "^1.3.3",
+    "fast-glob": "^3.3.2",
+    "puppeteer": "^22.4.1"
   },
   "dependencies": {
     "update": "^0.7.4"
