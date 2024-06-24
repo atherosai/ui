@@ -14,7 +14,8 @@
 
     <form class="box">
         <div class="input__wrapper">
-            <input id="password" type="password" class="input__field" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+            <input id="password" type="password" class="input__field"            
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$"
                 placeholder="Your Password">
             <label for="password" class="input__label">
                 Password

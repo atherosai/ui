@@ -21,9 +21,8 @@
                         type="password"
                         name="password"
                         placeholder="Your Password"
-                        title="Minimum 6 characters at 
-                                least 1 Alphabet and 1 Number"
-                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                         title="Minimum 6 characters at least 1 Alphabet, 1 Number and 1 Symbol"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$"
                         required
                         class="input__field"
                     >
