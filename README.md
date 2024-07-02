@@ -17,7 +17,7 @@ This is repository with examples of simple UI components. The repository is base
 
 * Clone the repo with
 ```
-git clone git@github.com:atherosai/ui.git
+git clone https://github.com/atherosai/ui.git
 ```
 
 # For HTML/CSS/JS
