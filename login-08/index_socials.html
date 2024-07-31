@@ -54,12 +54,12 @@
                     <input
                         id="password" type="password" 
                         name="password" placeholder="Your password"
-                        title="Minimum 6 characters at least 1 Alphabet and 1 Number"
-                        autocomplete="off"
-                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required
+                                        title="Minimum 6 characters at least 1 Alphabet, 1 Number and 1 Symbol"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$"
+                    required
                     >
                     <div class="error-message">Minimum 6 characters at
-                        least 1 Alphabet and 1 Number</div>
+                        least 1 Alphabet, 1 Number and 1 Symbol</div>
                 </div>
                 <button class="my-form__button" type="submit">
                     Sign In

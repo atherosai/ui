@@ -42,17 +42,16 @@
                 </div>
                 <div class="text-field">
                     <label for="password">Password:
-                        <input id="password" type="password" name="password" placeholder="Your Password" title="Minimum 6 characters at 
-                                                        least 1 Alphabet and 1 Number"
-                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                        <input id="password" type="password" name="password" placeholder="Your Password"                title="Minimum 6 characters at least 1 Alphabet, 1 Number and 1 Symbol"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$" required>
                         <!-- svg icon -->
                     </label>
                 </div>
                 <div class="text-field">
                     <label for="confirm-password">Repeat Password:
                         <input id="confirm-password" type="password" name="password" placeholder="Repeat Password"
-                            title="Minimum 6 characters at east 1 Alphabet and 1 Number"
-                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                                            title="Minimum 6 characters at least 1 Alphabet, 1 Number and 1 Symbol"
+                         pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$" required>
                         <!-- svg -->
                     </label>
                 </div>
