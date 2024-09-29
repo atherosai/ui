@@ -1,0 +1,89 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            HStack {
+                Text("x.com")
+                Spacer()
+                Image(systemName: "square.and.arrow.up")
+            }
+            .padding()
+            
+            ZStack {
+                Color.purple.opacity(0.3)
+                
+                VStack {
+                    HStack {
+                        Button(action: {}) {
+                            Image(systemName: "xmark")
+                                .foregroundColor(.white)
+                        }
+                        Spacer()
+                        Button(action: {}) {
+                            Image(systemName: "ellipsis")
+                                .foregroundColor(.white)
+                        }
+                    }
+                    .padding()
+                    
+                    Spacer()
+                    
+                    Text("#SheThinkSheCute 🙈😅😅😅😅")
+                        .foregroundColor(.white)
+                        .padding()
+                }
+            }
+            .aspectRatio(3/4, contentMode: .fit)
+            .cornerRadius(15)
+            
+            HStack {
+                Button(action: {}) {
+                    Image(systemName: "bubble.left")
+                }
+                Button(action: {}) {
+                    Image(systemName: "arrow.2.squarepath")
+                }
+                Text("3")
+                    .foregroundColor(.green)
+                Button(action: {}) {
+                    Image(systemName: "heart")
+                }
+                Text("4")
+                Button(action: {}) {
+                    Image(systemName: "chart.bar")
+                }
+                Button(action: {}) {
+                    Image(systemName: "square.and.arrow.up")
+                }
+                Spacer()
+            }
+            .padding()
+            
+            Spacer()
+            
+            HStack {
+                Button(action: {}) {
+                    Image(systemName: "chevron.left")
+                }
+                Button(action: {}) {
+                    Image(systemName: "chevron.right")
+                }
+                Button(action: {}) {
+                    Image(systemName: "plus")
+                }
+                Text("32")
+                Button(action: {}) {
+                    Image(systemName: "ellipsis")
+                }
+            }
+            .padding()
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
