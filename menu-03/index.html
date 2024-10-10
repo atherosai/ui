@@ -1,108 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Menu Example</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav class="menu__wrapper">
-            <div class="logo__wrapper">
-                <a
-                    href="#"
-                    title="Logo"
-                    class="logo"
-                >
-                    <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true">
-                        <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
-                    </svg>
-                </a>
-                <a href="#" class="page__title">
-                    Dashboard
-                </a>
-            </div>
-            <div class="action-buttons">
-                <button class="action-button">
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened Button-visual">
-                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
-                    </svg>
-                </button>
-                <button class="action-button">
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request Button-visual">
-                        <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path>
-                    </svg>
-                </button>
-                <button class="action-button">
-                    <span class="notification-mark"></span>
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-inbox color-fg-muted mr-0">
-                        <path d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z"></path>
-                    </svg>
-                </button>
-                <img id="avatar-navbar" class="avatar-profile" src="assets/profile_new.jpg" alt="Profile">
-            </div>
-        </nav>
-        <div class="navigation__menu none">
-            <div class="avatar-wrapper">
-                <img class="avatar-profile" src="assets/profile_new.jpg" alt="Profile">
-                <div class="avatar-name-wrapper">
-                    <div class="avatar-name-alias">a7v8x</div>
-                    <div class="avatar-name">David Mraz</div>
-                </div>
-                <div class="close-button">
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-                        <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-                    </svg>
-                </div>
-            </div>
-            <ul class="navigation__menu__items">
-                <li>
-                    &#128640; Maximizing the reward function
-                </li>
-                <li class="separator">
-                    <hr>
-                </li>
-                <li>
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-person">
-                        <path d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
-                    </svg>
-                    Your Profile
-                </li>
-                <li class="separator">
-                    <hr>
-                </li>
-                <li>
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    Your repositories
-                </li>
-                <li>
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project">
-                        <path d="M1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0ZM1.5 1.75v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25ZM11.75 3a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-1.5 0v-7.5a.75.75 0 0 1 .75-.75Zm-8.25.75a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0ZM8 3a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 3Z"></path>
-                    </svg>
-                    Your projects
-                </li>
-                <li>
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-organization">
-                        <path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path>
-                    </svg>
-                    Your organizations
-                </li>
-                <li>
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-globe">
-                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z"></path>
-                    </svg>
-                    Your Enterprises
-                </li>
-                <li>
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-                    </svg>
-                    Your Stars
-                </li>
-            </ul>
-        </div>
-        <script src="script.js"></script>
-    </body>
-</html>
-
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ui</title>
+  </head>
+  <body>
+  <!-- generated by ./index.mjs -->
+  <h1>ui</h1>
+  <ul>
+  <li><a href="accordion-01/index.html">accordion-01</a></li>
+<li><a href="accordion-02/index.html">accordion-02</a></li>
+<li><a href="accordion-03/index.html">accordion-03</a></li>
+<li><a href="animation-01/index.html">animation-01</a></li>
+<li><a href="animation-02/index.html">animation-02</a></li>
+<li><a href="buttons-01/index.html">buttons-01</a></li>
+<li><a href="buttons-02/index.html">buttons-02</a></li>
+<li><a href="buttons-03/index.html">buttons-03</a></li>
+<li><a href="cards-01/cards.html">cards-01/cards.html</a></li>
+<li><a href="cards-02/index.html">cards-02</a></li>
+<li><a href="cards-03/index.html">cards-03</a></li>
+<li><a href="cards-04/index.html">cards-04</a></li>
+<li><a href="cards-05/index.html">cards-05</a></li>
+<li><a href="cards-06/index.html">cards-06</a></li>
+<li><a href="cards-07/cards.html">cards-07/cards.html</a></li>
+<li><a href="charts-01/index.html">charts-01</a></li>
+<li><a href="custom-cursor-01/index.html">custom-cursor-01</a></li>
+<li><a href="drag-and-drop-01/index.html">drag-and-drop-01</a></li>
+<li><a href="dropdown-menu-01/index.html">dropdown-menu-01</a></li>
+<li><a href="dropdown-menu-02/index.html">dropdown-menu-02</a></li>
+<li><a href="dropdown-menu-02/index_socials.html">dropdown-menu-02/index_socials.html</a></li>
+<li><a href="dropdown-menu-03/index.html">dropdown-menu-03</a></li>
+<li><a href="dropdown-menu-04/index.html">dropdown-menu-04</a></li>
+<li><a href="dropdown-menu-05/index.html">dropdown-menu-05</a></li>
+<li><a href="dropdown-menu-05/index_socials.html">dropdown-menu-05/index_socials.html</a></li>
+<li><a href="dropdown-menu-06/index.html">dropdown-menu-06</a></li>
+<li><a href="dropdown-menu-06/index_socials.html">dropdown-menu-06/index_socials.html</a></li>
+<li><a href="dropzone-01/dropzone.html">dropzone-01/dropzone.html</a></li>
+<li><a href="dropzone-01/dropzone_socials.html">dropzone-01/dropzone_socials.html</a></li>
+<li><a href="dropzone-02/dropzone.html">dropzone-02/dropzone.html</a></li>
+<li><a href="dropzone-02/dropzone_socials.html">dropzone-02/dropzone_socials.html</a></li>
+<li><a href="footer-01/index.html">footer-01</a></li>
+<li><a href="footer-02/index.html">footer-02</a></li>
+<li><a href="footer-03/index.html">footer-03</a></li>
+<li><a href="footer-04/index.html">footer-04</a></li>
+<li><a href="footer-05/index.html">footer-05</a></li>
+<li><a href="form-controls-01/index.html">form-controls-01</a></li>
+<li><a href="form-controls-02/index.html">form-controls-02</a></li>
+<li><a href="gallery-01/index.html">gallery-01</a></li>
+<li><a href="gallery-02/index.html">gallery-02</a></li>
+<li><a href="gallery-03/index.html">gallery-03</a></li>
+<li><a href="gallery-04/index.html">gallery-04</a></li>
+<li><a href="gallery-05/index.html">gallery-05</a></li>
+<li><a href="gallery-06/index.html">gallery-06</a></li>
+<li><a href="input-01/index.html">input-01</a></li>
+<li><a href="input-02/index.html">input-02</a></li>
+<li><a href="input-03/index.html">input-03</a></li>
+<li><a href="input-04/my-input.html">input-04/my-input.html</a></li>
+<li><a href="login-01/index.html">login-01</a></li>
+<li><a href="login-02/index.html">login-02</a></li>
+<li><a href="login-03/index.html">login-03</a></li>
+<li><a href="login-04/index.html">login-04</a></li>
+<li><a href="login-05/index.html">login-05</a></li>
+<li><a href="menu-01/index.html">menu-01</a></li>
+<li><a href="menu-02/index.html">menu-02</a></li>
+<li><a href="menu-03/index.html">menu-03</a></li>
+<li><a href="menu-03/socials_index.html">menu-03/socials_index.html</a></li>
+<li><a href="menu-04/index.html">menu-04</a></li>
+<li><a href="menu-05/index.html">menu-05</a></li>
+<li><a href="menu-06/index.html">menu-06</a></li>
+<li><a href="modal-01/index.html">modal-01</a></li>
+<li><a href="navigation-bar-01/index.html">navigation-bar-01</a></li>
+<li><a href="navigation-bar-02/index.html">navigation-bar-02</a></li>
+<li><a href="parallax-01/index.html">parallax-01</a></li>
+<li><a href="payment-card-01/index.html">payment-card-01</a></li>
+<li><a href="pricing-01/index.html">pricing-01</a></li>
+<li><a href="pricing-02/index.html">pricing-02</a></li>
+<li><a href="profile-01/index.html">profile-01</a></li>
+<li><a href="profile-01/index_socials.html">profile-01/index_socials.html</a></li>
+<li><a href="profile-cards-01/index.html">profile-cards-01</a></li>
+<li><a href="profile-cards-02/index.html">profile-cards-02</a></li>
+<li><a href="profile-cards-03/index.html">profile-cards-03</a></li>
+<li><a href="react-examples/out/3d-gallery.html">react-examples/3d-gallery.html</a></li>
+<li><a href="react-examples/out/404.html">react-examples/404.html</a></li>
+<li><a href="react-examples/out/button-glow-effect.html">react-examples/button-glow-effect.html</a></li>
+<li><a href="react-examples/out/button-hover-effect.html">react-examples/button-hover-effect.html</a></li>
+<li><a href="react-examples/out/card-scroll-snap.html">react-examples/card-scroll-snap.html</a></li>
+<li><a href="react-examples/out/cards-flip-effect-gallery.html">react-examples/cards-flip-effect-gallery.html</a></li>
+<li><a href="react-examples/out/cards-hover-effect.html">react-examples/cards-hover-effect.html</a></li>
+<li><a href="react-examples/out/css-flex-box-responsive.html">react-examples/css-flex-box-responsive.html</a></li>
+<li><a href="react-examples/out/custom-loader-v1.html">react-examples/custom-loader-v1.html</a></li>
+<li><a href="react-examples/out/custom-loader.html">react-examples/custom-loader.html</a></li>
+<li><a href="react-examples/out/custom-radio.html">react-examples/custom-radio.html</a></li>
+<li><a href="react-examples/out/custom-slider-range.html">react-examples/custom-slider-range.html</a></li>
+<li><a href="react-examples/out/cut-out-text.html">react-examples/cut-out-text.html</a></li>
+<li><a href="react-examples/out/flex-grow-effect.html">react-examples/flex-grow-effect.html</a></li>
+<li><a href="react-examples/out/footer-01.html">react-examples/footer-01.html</a></li>
+<li><a href="react-examples/out/grid-template-areas.html">react-examples/grid-template-areas.html</a></li>
+<li><a href="react-examples/out/index.html">react-examples/index.html</a></li>
+<li><a href="react-examples/out/input-example.html">react-examples/input-example.html</a></li>
+<li><a href="react-examples/out/input-search.html">react-examples/input-search.html</a></li>
+<li><a href="react-examples/out/ios-like-switch.html">react-examples/ios-like-switch.html</a></li>
+<li><a href="react-examples/out/menu-items-hover.html">react-examples/menu-items-hover.html</a></li>
+<li><a href="react-examples/out/notification-example.html">react-examples/notification-example.html</a></li>
+<li><a href="react-examples/out/profile-card.html">react-examples/profile-card.html</a></li>
+<li><a href="react-examples/out/social-buttons.html">react-examples/social-buttons.html</a></li>
+<li><a href="react-examples/out/stories-horizontal-scroller.html">react-examples/stories-horizontal-scroller.html</a></li>
+<li><a href="react-examples/out/summary-details.html">react-examples/summary-details.html</a></li>
+<li><a href="react-examples/out/theme-switcher.html">react-examples/theme-switcher.html</a></li>
+<li><a href="react-examples/out/ui/notification-01.html">react-examples/ui</a></li>
+<li><a href="react-examples/out/zoom-image-hover-effect.html">react-examples/zoom-image-hover-effect.html</a></li>
+<li><a href="scroll-snap-01/index.html">scroll-snap-01</a></li>
+<li><a href="scrolling-01/index.html">scrolling-01</a></li>
+<li><a href="scrolling-02/index.html">scrolling-02</a></li>
+<li><a href="scrolling-03/index.html">scrolling-03</a></li>
+<li><a href="sidebar-01/index.html">sidebar-01</a></li>
+<li><a href="sidebar-02/index.html">sidebar-02</a></li>
+<li><a href="sidebar-03/index.html">sidebar-03</a></li>
+<li><a href="sidebar-04/index.html">sidebar-04</a></li>
+<li><a href="sidebar-06/index.html">sidebar-06</a></li>
+<li><a href="sidebar-07/index.html">sidebar-07</a></li>
+<li><a href="sidebar-08/index.html">sidebar-08</a></li>
+<li><a href="signup-01/index.html">signup-01</a></li>
+<li><a href="signup-02/index.html">signup-02</a></li>
+<li><a href="signup-03/index.html">signup-03</a></li>
+<li><a href="socials-01/index.html">socials-01</a></li>
+<li><a href="socials-02/index.html">socials-02</a></li>
+<li><a href="socials-03/index.html">socials-03</a></li>
+<li><a href="socials-04/index.html">socials-04</a></li>
+<li><a href="table-01/index.html">table-01</a></li>
+<li><a href="table-02/index.html">table-02</a></li>
+<li><a href="table-03/index.html">table-03</a></li>
+<li><a href="table-04/index.html">table-04</a></li>
+<li><a href="tabs-01/index.html">tabs-01</a></li>
+<li><a href="tabs-02/index.html">tabs-02</a></li>
+<li><a href="tabs-03/index.html">tabs-03</a></li>
+<li><a href="toast-notification-01/index.html">toast-notification-01</a></li>
+<li><a href="toast-notification-02/index.html">toast-notification-02</a></li>
+<li><a href="toast-notification-03/index.html">toast-notification-03</a></li>
+<li><a href="toolbar-01/index.html">toolbar-01</a></li>
+<li><a href="toolbar-02/index.html">toolbar-02</a></li>
+<li><a href="vertical-tabs-01/index.html">vertical-tabs-01</a></li>
+<li><a href="vertical-tabs-02/index.html">vertical-tabs-02</a></li>
+<li><a href="vertical-tabs-03/index.html">vertical-tabs-03</a></li>
+<li><a href="widget-01/index.html">widget-01</a></li>
+<li><a href="widget-02/index.html">widget-02</a></li>
+  </ul>
+  </body>
+  </html>
+  
