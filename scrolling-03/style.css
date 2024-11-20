@@ -261,3 +261,22 @@ body {
 .circle--red {
     background: var(--error);
 }
+
+
+/* Track */
+::-webkit-scrollbar {
+    background-color: #f1f1f1; /* Change the background color */
+    width: 8px; /* Set the width of the scrollbar */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #ff4500; /* Change the color of the handle */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b30000; /* Change the color of the handle on hover */
+}
